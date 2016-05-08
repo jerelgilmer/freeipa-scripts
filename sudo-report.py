@@ -86,7 +86,7 @@ ALL_SUDOCMDS = l.search_s(baseSudoCmdDN, scope, sudoCmdFilter, sudoCmdAttributes
 
 ALL_SUDOCMDGROUPS = l.search_s(baseSudoCmdGroupDN, scope, sudoCmdGroupFilter, sudoCmdGroupAttributes)
 
-# HBAC rules that apply to all servers
+# SUDO rules that apply to all servers
 sudoAllServersFilter = "(&(objectclass=ipasudorule)(hostCategory=all))"
 SUDORULE_ALL_SERVERS = l.search_s(baseSudoDN, scope, sudoAllServersFilter, sudoAttributes)
 
